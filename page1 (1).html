@@ -1,0 +1,30 @@
+<!-- Photo Gallery Start -->
+<div class="gallery">
+    <img src="https://via.placeholder.com/200x150?text=Photo+1" alt="Photo 1">
+    <img src="https://via.placeholder.com/200x150?text=Photo+2" alt="Photo 2">
+    <img src="https://via.placeholder.com/200x150?text=Photo+3" alt="Photo 3">
+    <img src="https://via.placeholder.com/200x150?text=Photo+4" alt="Photo 4">
+    <img src="https://via.placeholder.com/200x150?text=Photo+5" alt="Photo 5">
+</div>
+<!-- Photo Gallery End -->
+
+<style>
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 40px 0;
+}
+.gallery img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+</style>
